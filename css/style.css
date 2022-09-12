@@ -157,7 +157,8 @@ header.hero p {
 
 @media (max-width: 479px) {
     header.hero {
-        background-position-x: -516px;
+        background-position-x: -577px;
+        background-position-y: 30px;
     }
 
     h1 {
