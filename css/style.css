@@ -128,3 +128,54 @@ footer *+.rights{margin-top:13px}
 footer *+.invite{margin-top:49px}
 footer *+address{margin-top:35px}
 footer address+*{margin-top:45px}
+
+header.hero {
+    background: url("../images/parallax1.jpg");
+    /*background: url("../images/lead/taxi1.jpeg");*/
+    /*background: url("../images/lead/taxi2.webp");*/
+    /*background: url("../images/lead/taxi3.jpeg");*/
+    height: 70vh;
+}
+
+header.hero p {
+    margin-top: 50px;
+}
+
+@media (max-width: 479px) {
+    header.hero {
+        background-position-x: -516px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .gallery div.parent {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap:0 ;
+    }
+
+    .gallery div.div2 { grid-area: 2 / 1 / 2 / 3; }
+    .gallery div.div3 { grid-area: 3 / 1 / 3 / 2; }
+    .gallery div.div4 { grid-area: 4 / 1 / 4 / 1; }
+}
+
+.gallery {
+    background: #02bbd3;
+}
+
+.gallery .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+    padding: 40px;
+}
+
+.gallery .div1 { grid-area: 1 / 1 / 2 / 2; }
+.gallery .div2 { grid-area: 1 / 2 / 2 / 3; }
+.gallery .div3 { grid-area: 2 / 1 / 3 / 2; }
+.gallery .div4 { grid-area: 2 / 2 / 3 / 3; }
