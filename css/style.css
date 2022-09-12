@@ -130,11 +130,25 @@ footer *+address{margin-top:35px}
 footer address+*{margin-top:45px}
 
 header.hero {
-    background: url("../images/parallax1.jpg");
+    /*background: url("../images/parallax1.jpg");*/
     /*background: url("../images/lead/taxi1.jpeg");*/
-    /*background: url("../images/lead/taxi2.webp");*/
+    background: url("../images/lead/taxi2.webp");
+    background-size: cover;
     /*background: url("../images/lead/taxi3.jpeg");*/
     height: 70vh;
+}
+
+header.hero address a {
+    color: #f4c439;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+header.hero p {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+header.hero p span {
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 header.hero p {
@@ -171,8 +185,8 @@ header.hero p {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
-    grid-row-gap: 40px;
-    padding: 40px;
+    grid-row-gap: 50px;
+    padding: 50px;
 }
 
 .gallery .div1 { grid-area: 1 / 1 / 2 / 2; }
